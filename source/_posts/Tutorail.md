@@ -1,5 +1,5 @@
 ---
-title: GitHub搭建博客教程
+title: GitHub + Hexo搭建博客教程
 date: 2018-06-20 18:25:54
 categories: 
     - Git
