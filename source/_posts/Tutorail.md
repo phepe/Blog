@@ -211,13 +211,14 @@ language: default #默认是英文
 ### 10. 通过git管理自己的博客的项目
 
 
-通过`hexo d`上传的是生产好的网页，我们通过git管理自己的项目需要将blog项目上传，其中`node_modules`不用上传，每次通过`npm install` 重新拉启对应的node模块。然后为了保证使用的主题可以方便更新，主题也不用上传,因为我们使用主题的时候直接使用的`git clone https://github.com/theme-next/hexo-theme-next themes/next` 所以主题本身有自己的版本控制，不需要我们上传。`public`目录也不用上传，因为每次都是新生产的。
+通过`hexo d`上传的是生产好的网页，我们通过git管理自己的项目需要将blog项目上传，其中`node_modules`不用上传，每次通过`npm install` 重新拉启对应的node模块。然后为了保证使用的主题可以方便更新，主题也不用上传,因为我们使用主题的时候直接使用的`git clone https://github.com/theme-next/hexo-theme-next themes/next` 所以主题本身有自己的版本控制，不需要我们上传。`public`目录和`db.json`文件也不用上传，因为每次都是新生产的。
 
-因此不用上传的目录有:
+因此不用上传的目录和文件有:
 
 * node_modules
 * themes/next
 * public
+* db.json
 
 
 
