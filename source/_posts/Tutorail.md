@@ -102,7 +102,7 @@ language: default #默认是英文
 在项目目录下的_config.yml中，配置theme
     
     theme: next 
-可在/theme/{theme}/_config.yml 主题的配置文件下进行主题的配置，根据[官方文档](http://theme-next.iissnan.com/getting-started.html "")配置。`scheme` `language `等配置
+可在/theme/{theme}/_config.yml 主题的配置文件下进行主题的配置，根据[官方文档](http://theme-next.iissnan.com/getting-started.html)配置。`scheme` `language `等配置
    
 ### 6.设置分类功能
 #### 6.1 启用分类功能
@@ -191,8 +191,27 @@ language: default #默认是英文
 
 生产网站，提交到github上，点击一个文章，初始化下方的评论按钮，会提示你用github登陆，发布评论，测试是否成功。
 
+### 9. 增加联系方式
+
+开themes/next目录下的_config.yml文件，找到`social`字段，开启对应的联系方式
+
+    social:
+      #GitHub: https://github.com/yourname || github
+      E-Mail: mailto:phepe@foxmail.com || envelope
+      #Google: https://plus.google.com/yourname || google
+      #Twitter: https://twitter.com/yourname || twitter
+      #FB Page: https://www.facebook.com/yourname || facebook
+      #VK Group: https://vk.com/yourname || vk
+      #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+      #YouTube: https://youtube.com/yourname || youtube
+      #Instagram: https://instagram.com/yourname || instagram
+      #Skype: skype:yourname?call|chat || skype
 
 
+### 10. 通过git管理自己的博客的项目
+
+
+通过`hexo d`上传的是生产好的网页，我们通过git管理自己的项目需要将blog项目上传，其中`node_modules`不用上传，每次通过`npm install` 重新拉启对应的node模块。然后为了保证使用的主题可以方便更新，主题也不用上传,因为我们使用主题的时候直接使用的`git clone https://github.com/theme-next/hexo-theme-next themes/next` 所以主题本身有自己的版本控制，不需要我们上传。
 
 
 
