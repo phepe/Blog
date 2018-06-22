@@ -7,7 +7,7 @@ tags:
     - GitHub
 ---
 
-### 1.安装hexo
+### 1. 安装hexo
 #### 1.1 安装node.js
   在node.js官网下载对应系统的安装包，按照提示进行安装，前提是需要安装好npm，然后通过npm安装各种需要的工具，安装成功后输入以下命令检测
 
@@ -34,7 +34,7 @@ tags:
     hexo s      // s即server
 访问 localhost:4000 查看效果
 
-### 3.配置
+### 3. 配置
 网站的设置大部分都在_config.yml文件中
 
 * title：网站标题
@@ -106,7 +106,7 @@ language: default #默认是英文
     theme: next 
 可在/theme/{theme}/_config.yml 主题的配置文件下进行主题的配置，根据[官方文档](http://theme-next.iissnan.com/getting-started.html)配置。`scheme` `language `等配置
    
-### 6.设置分类功能
+### 6. 设置分类功能
 #### 6.1 启用分类功能
 * 查看项目目录下的_config.yml 看是否有`category_dir: categories`
 * 查看theme目录下的_config.yml 看是否有`categories: /categories`
@@ -134,7 +134,7 @@ language: default #默认是英文
     tags:
     ---
     
-### 7.设置标签功能
+### 7. 设置标签功能
 #### 7.1 启用标签功能
 * 查看项目目录下的_config.yml 看是否有`tag_dir: tags`
 * 查看theme目录下的_config.yml 看是否有`tags: /tags`
@@ -224,10 +224,16 @@ language: default #默认是英文
 
 ### 11. 其它
 
-在自己的文章中加入` <!--more-->`可以启用首页阅读全文的功能
+在自己的文章中加入`<!--more-->`可以启用首页阅读全文的功能
+
+在对应的theme目录下的_config.yml文件下有`auto_excerpt`字段，可以开启阅读全文的功能，但是首页显示的部分样式变了
+
+在对应的theme目录下的_config.yml文件下有`number`字段是自动为标题设置序号到，由于我们一般会自己给标题一个序号，所以一般把它设置为`false`
+
+在对应的theme目录下的_config.yml文件下有`avatar`字段里面的`url`是设置图像的，相对路径是`source`目录
 
 
-在对应的theme目录下的_config.yml目录下有`auto_excerpt`字段，可以开启阅读全文的功能，但是首页显示的部分样式变了
+
 
 
 

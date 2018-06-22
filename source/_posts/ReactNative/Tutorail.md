@@ -1,6 +1,6 @@
 ---
 title: React Native 开发环境安装
-date: 2018-06-21 10:25:54
+date: 2018-06-21 10:20:52
 categories: 
     - React Native
 tags:
