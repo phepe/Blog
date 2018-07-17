@@ -173,8 +173,20 @@ tags:
     然后在项目目录下运行以下命令
     
         yarn run postinstall
+2. ‘fishhook/fishhook.h’ file not found
 
-2. 'algorithm' file not found
+    在`package.json`里面加入
+     
+    "fishhookinstall": "sed -i '' 's#<fishhook/fishhook.h>#\"fishhook.h\"#g' ./node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.m"
+        
+    然后在项目目录下运行以下命令
+    
+        yarn run postinstall
+    返回ios目录运行
+    
+        pod install
+
+3. 'algorithm' file not found
 
     在`/ios`目录下的`Podfile`文件末位加入修复脚步，修改后的`Podfile`如下
     
