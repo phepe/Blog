@@ -34,3 +34,14 @@ Gradle对应版本下载完成之后，Gradle Wrapper的使命基本完成了，
 * `gradle-wrapper.properties`中配置的是的Gradle的版本.
 
 * `build.gradle`中的依赖指定的是Gradle插件的版本.
+
+Gradle与Gradle插件版本匹配，最好让Gradle和Gradle插件都更新到最新
+
+
+| Plugin version | Required Gradle version |
+| :----: | :----:|
+| 1.0.0 - 1.1.3 | 2.2.1 - 2.3 |
+| 1.2.0 - 1.3.1 | 2.2.1 - 2.9 |
+| 1.5.0 | 2.2.1 - 2.13 |
+| 2.0.0 - 2.1.2 | 2.10 - 2.13 |
+| 2.1.3+ | 2.14.1+ |
