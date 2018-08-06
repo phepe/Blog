@@ -181,7 +181,7 @@ tags:
         
     然后在项目目录下运行以下命令
     
-        yarn run postinstall
+        yarn run fishhookinstall
     返回ios目录运行
     
         pod install
