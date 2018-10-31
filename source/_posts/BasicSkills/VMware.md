@@ -27,7 +27,7 @@ tags:
 
 需要准备Android Studio和JDK安装包:
 
-* 在谷歌的官方网站上下载Android Studio，进行安装，最好不要安装在有空格的目录下，因为Cocos2dx识别环境变量的时候不能有空格。
+* 在谷歌的官方网站上下载Android Studio，进行安装，最好不要安装在有空格的目录下，因为Cocos2dx识别环境变量的时候不能有空格，打开Android Studio安装SDK，选择自定义安装，这样就可以选择SDK安装的路径。
 
 * 如果Android可以顺利打开，则不需要再去下载JDK，只需要设置一下环境变量就行。
 
@@ -89,6 +89,11 @@ NDK下载地址:
 * 确保虚拟机里面有项目Gradle文件里面设置的SDK和Build Tools，Build Tools在`sdk\build-tools`目录下查看，SDK在`sdk\platforms`目录下查看。
 
 * 一定要记得修改`cocos2d/cocos/platform/android/libcocos2dx/AndroidManifest.xml`里面的名称，因为这个名称在手机系统里面是可以看到的。
+
+
+### 5. 其他
+
+安装[shadowsocks](https://github.com/shadowsocks/shadowsocks-windows/releases)翻墙，需要安装 [.NET Framework 4.6.2](https://www.microsoft.com/zh-CN/download/details.aspx?id=53344)
 
 
 

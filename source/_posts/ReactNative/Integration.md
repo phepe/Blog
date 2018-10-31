@@ -177,7 +177,7 @@ tags:
 
     在`package.json`里面加入
      
-    "fishhookinstall": "sed -i '' 's#<fishhook/fishhook.h>#\"fishhook.h\"#g' ./node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.m"
+        "fishhookinstall": "sed -i '' 's#<fishhook/fishhook.h>#\"fishhook.h\"#g' ./node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.m"
         
     然后在项目目录下运行以下命令
     
@@ -277,6 +277,12 @@ tags:
         pod update
     
     重新打开Xcode工程，运行app
+    
+    还有一种解决办法是修改` /node_modules/react-native/ReactCommon/yoga/yoga.podspec`，在末尾加上下面三行写明要暴露出的头文件。
+    
+        header_files = 'yoga/{Yoga,YGEnums,YGMacros}.h'
+        header_files = File.join('ReactCommon/yoga', header_files) if ENV['INSTALL_YOGA_WITHOUT_PATH_OPTION']
+        spec.public_header_files = header_files
 
 4. Native module cannot be null
 
