@@ -95,8 +95,7 @@ NDK下载地址:
 
 ### 5. 其他
 
-安装[shadowsocks](https://github.com/shadowsocks/shadowsocks-windows/releases)翻墙，需要安装 [.NET Framework 4.6.2]
-(https://www.microsoft.com/zh-CN/download/details.aspx?id=53344)，然后如果无法写入注册表，需要保留杀毒软件(360),然后通过杀毒软件授权。
+安装[shadowsocks](https://github.com/shadowsocks/shadowsocks-windows/releases)翻墙，需要安装 [.NET Framework 4.6.2](https://www.microsoft.com/zh-CN/download/details.aspx?id=53344)，然后如果无法写入注册表，需要保留杀毒软件(360),然后通过杀毒软件授权。
 
 
 
