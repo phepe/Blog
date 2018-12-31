@@ -73,7 +73,7 @@ NDK下载地址:
 
 设置Android SDK的路径，安装Android Studio的时候已经下载好了SDK，我们找到SDK的路径将它设置到环境变量`ANDROID_SDK_ROOT`中
 
-    ANDROID_SDK_ROOT    C:\Program Files\Android\sdk
+    ANDROID_SDK_ROOT    C:\Android\sdk
 
 由于谷歌在新的SDK Tools中已经去掉了`android`命令，而`cocos`是使用`android`命令来进行编译的，所以要在网上下载一个旧版本`tools`来替换新版本的`sdk\tools`。
 [Windows下载地址](https://dl.google.com/android/repository/tools_r25.2.5-windows.zip)
@@ -95,9 +95,9 @@ NDK下载地址:
 
 ### 5. 其他
 
-安装[shadowsocks](https://github.com/shadowsocks/shadowsocks-windows/releases)翻墙，需要安装 [.NET Framework 4.6.2]
-(https://www.microsoft.com/zh-CN/download/details.aspx?id=53344)，然后如果无法写入注册表，需要保留杀毒软件(360),
-然后通过杀毒软件授权。最好在安装完系统后不要卸载任何软件，确保shadowsocks可以用之后在卸载。
+安装[shadowsocks](https://github.com/shadowsocks/shadowsocks-windows/releases)翻墙，
+需要安装 [.NET Framework 4.6.2](https://www.microsoft.com/zh-CN/download/details.aspx?id=53344)，然后如果无法写入注册表，需要保留360相关的软件,
+卸载后会导致用不了Shadowsocks,最好在安装完系统后不要卸载任何软件，确保shadowsocks可以用之后在卸载，卸载后再次重启确定SS是否可用。然后在安装开发环境。
 
 
 
