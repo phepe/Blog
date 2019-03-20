@@ -29,4 +29,10 @@ tags:
         
 也可以使用：
 
-    git checkout . && git clean -xdf        
+    git checkout . && git clean -xdf 
+    
+### 2. git 提交代码
+
+  当出现用户账号密码不对，或者没有权限当时候，可以使用命令来推代码，然后再输入GitHub上当账号密码就行。
+  
+    git push origin master
