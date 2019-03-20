@@ -15,13 +15,14 @@ tags:
 
 并发构建数: 2
 
-远程工作目录: /Users/jenslave
+远程工作目录: /Users/jenslave (会默认在后面加上workspace)
 
 标签: mac_mini
 
 用法: 只允许运行绑定到这台机器的Job
 
 启动方式: Launch agent agents via ssh
+<!-- more -->
 
 > 主机: 172. * . * . *
 
