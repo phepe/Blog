@@ -2,9 +2,9 @@
 title: GitHub + Hexo搭建博客教程
 date: 2018-06-20 18:25:54
 categories: 
-    - Git
-tags:
     - GitHub
+tags:
+    - Git
 ---
 
 ### 1. 安装hexo
