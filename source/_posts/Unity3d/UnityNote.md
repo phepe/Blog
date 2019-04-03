@@ -1,5 +1,5 @@
 ---
-title: Unity3d中的UI
+title: Unity3d学校笔记
 date: 2019-03-20 14:25:02
 categories: 
     - Unity3d
@@ -7,12 +7,12 @@ tags:
     - Game
 ---
 
-### 1. 概述
+### 1. 基本概念
 
-* UI: User Interface(用户界面)的简称。
-* GUI: Graphical User Interface(图形用户界面)的简称，是指采用图形方式显示的计算机操作用户界面。 
-* NGUI: 以前在Unity中广泛来做2D的，是第三方的包，需要安装.
-* UGUI: Unity4.6以后，Unity找到NGUI的作者，用了一年开发了UGUI，变成内置于Unity中的包，官方主推。
+* Unity中的一个技巧是，创建一个空的游戏对象，并将其作为其它对象的文件夹，它将简化你场景的层次结构。注意最好将空对象的坐标设置为(0, 0, 0)，将这些空对象视为纯逻辑对象。
+* 2D和3D使用的物理引擎是不一样的Box2D/PhysX。 
+* 物理相关的处理尽量在`FixedUpdate`里进行。
+* UGUI: Unity5.X后(其实是Unity4.6以后)，Unity找到NGUI的作者，用了一年开发了UGUI，变成内置于Unity中的包，官方主推。
 <!--more-->
 
 ### 2. UGUI与NGUI的对比差别
@@ -65,7 +65,7 @@ Canvas Canvas属性一览：
 * Plane Distance 定义UI平面摆放在摄像机的前方距离，仅适用于Screen Space - Camera模式。
 * Event Camera 定义处理UI事件的摄像机，仅适用于World Space模式。
 
-通常一个Scene只需Canvas足矣，但多个Canvas也是支持的。为了优化目的，也支持Canvas嵌套，也即将某个Canvas作为另一个Canvas子节点。子Canvas跟父Canvas的Rander Mode保持一致。
+通常一个Scene只需一个Canvas，但多个Canvas也是支持的。为了优化目的，也支持Canvas嵌套，也即将某个Canvas作为另一个Canvas子节点。子Canvas跟父Canvas的Rander Mode保持一致。
 
 Canvas组件三种模式的区别： 
 

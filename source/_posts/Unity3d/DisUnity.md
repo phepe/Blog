@@ -73,7 +73,7 @@ tags:
 #### 1.3 提取Unity游戏资源和脚本
 
   * UnityStudio ，选中`assets\bin\Data`该目录，游戏图片，声音都可以很方便的查看，导出，就是不支持查看代码 。其中`Scene Hierarchy`可以查看游戏里面场景的分布情况，而`Asset 
-  List`可以查看资源[下载地址](https://github
+  List`可以查看资源。如果有图片在AssetBundles里面，也可以通过加载这个目录导出图片。[下载地址](https://github
   .com/Perfare/AssetStudio/releases)
 
   * .NET Reflector(.net反编译工具)，查看代码，需要破解，把`Assembly-CSharp.dll`直接拖进去，就可以看的所有的代码，类名，方法名，方法体，一清二楚。右键点击就可以导出。[下载地址](https://www
