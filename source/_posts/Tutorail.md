@@ -1,7 +1,7 @@
 ---
 title: GitHub + Hexo搭建博客教程
 date: 2018-06-20 18:25:54
-categories: 
+categories:
     - GitHub
 tags:
     - Git
@@ -26,10 +26,14 @@ tags:
     cd Blog
     npm install
 
+  如果是已有的项目，需要在项目下面运行
+
+    npm install hexo --save
+
 #### 2.2 生成静态页面
     hexo clean
     hexo g      //  g即generate
-    
+
 #### 2.3 运行
     hexo s      // s即server
 访问 localhost:4000 查看效果
@@ -76,7 +80,7 @@ language: default #默认是英文
     hexo g        // 重新生成博客
     hexo s        // 本地预览博客
     hexo d        // d即deploy 运行的过程中输入对应的github的账号密码
-    
+
 访问 https://phepe.github.io/ 查看效果
 
 ### 4. 新增博客
@@ -99,13 +103,13 @@ language: default #默认是英文
 将网站找到的主题下载到项目的themes目录下，使用next主题
 
     git clone https://github.com/theme-next/hexo-theme-next themes/next
-    
+
 #### 5.2 设置主题
 在项目目录下的_config.yml中，配置theme
-    
-    theme: next 
+
+    theme: next
 可在/theme/{theme}/_config.yml 主题的配置文件下进行主题的配置，根据[官方文档](http://theme-next.iissnan.com/getting-started.html)配置。`scheme` `language `等配置
-   
+
 ### 6. 设置分类功能
 #### 6.1 启用分类功能
 * 查看项目目录下的_config.yml 看是否有`category_dir: categories`
@@ -113,7 +117,7 @@ language: default #默认是英文
 
 #### 6.2 新建分类
 使用如下命令，会在source目录下生成categories/index.md文件
-    
+
     hexo new page categories
 修改categories/index.md 增加`type`和`comments`字段
 
@@ -129,11 +133,11 @@ language: default #默认是英文
     ---
     title: GitHub搭建博客教程
     date: 2018-06-20 18:25:54
-    categories: 
+    categories:
         - Git
     tags:
     ---
-    
+
 ### 7. 设置标签功能
 #### 7.1 启用标签功能
 * 查看项目目录下的_config.yml 看是否有`tag_dir: tags`
@@ -141,7 +145,7 @@ language: default #默认是英文
 
 #### 7.2 新建标签
 使用如下命令，会在source目录下生成tags/index.md文件
-    
+
     hexo new page tags
 修改tags/index.md 增加`type`和`comments`字段
 
@@ -151,14 +155,14 @@ language: default #默认是英文
     type: "tags"
     comments: false
     ---
-    
+
 #### 7.3 给文章设置分类
 在文章的头部加上`tags `字段，通过这个字段设置分类
 
     ---
     title: GitHub搭建博客教程
     date: 2018-06-20 18:25:54
-    categories: 
+    categories:
         - Git
     tags:
         - GitHub
@@ -168,16 +172,16 @@ language: default #默认是英文
 #### 8.1 安装gitment
 
     npm install gitment --save
-    
+
 #### 8.2 在Github上注册
 
-在[Github](https://github.com/settings/applications/new)进行注册，获取Client ID和Client Secret 
+在[Github](https://github.com/settings/applications/new)进行注册，获取Client ID和Client Secret
 
     Application name : phepe
     Homepage URL : https://phepe.github.io/
     Application description : blog
     Authorization callback URL : https://phepe.github.io/
- 
+
 #### 8.3 在主题里面开启Gitment评论功能
 
 打开themes/next目录下的_config.yml文件进行修改并保存, 修改下面展示的字段
@@ -231,25 +235,3 @@ language: default #默认是英文
 在对应的theme目录下的_config.yml文件下有`number`字段是自动为标题设置序号到，由于我们一般会自己给标题一个序号，所以一般把它设置为`false`
 
 在对应的theme目录下的_config.yml文件下有`avatar`字段里面的`url`是设置图像的，相对路径是`source`目录
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
